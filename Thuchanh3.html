@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành đăng nhập</title>
+</head>
+<body>
+<script>
+    let user;
+    let password;
+
+    user = prompt('Nhập tên đăng nhập đi bạn:', '');
+    if (user == "Admin") {
+        alert("welcome!");
+        password = prompt('Nhập pass đi bạn:', '');
+        if (password == "TheMaster") {
+            alert("welcome!");
+        } else if (password == "null") {
+            alert("cancel");
+        } else {
+            alert("wrong password")
+        }
+    } else if (user == "null") {
+        alert("cancel");
+    } else {
+        alert("i don't know u, babe")
+    }
+</script>
+</body>
+</html>

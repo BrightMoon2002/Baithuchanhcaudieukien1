@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành sử dụng switch case</title>
+</head>
+<body>
+<h1>Thực hành các bài tập sử dụng switch case</h1>
+<script>
+    let a
+    a = prompt("Nhập tên trình duyệt của bạn", '');
+    // if (a == "edge") {
+    //     alert("You've got the edge");
+    // } else if ( a == "chrome" || a == "firefox" || a == "safari" || a == "opera") {
+    //     alert("Oke we support these browser too")
+    // } else {
+    //     alert("we hope this page looks ok!")
+    // }
+    switch (a) {
+        case "edge":
+            alert("Youve got the edge!");
+            break;
+        case "chrome":
+        case "firefox":
+        case "safari":
+        case "opera":
+            alert("Oke we support these  browser too");
+            break;
+        default:
+            alert("we hope this page looks ok!");
+    }
+</script>
+</body>
+</html>
